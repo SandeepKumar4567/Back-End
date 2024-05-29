@@ -13,8 +13,10 @@ const userRouter = require('./routes/user');
 
 //Mongo Database Connection
 // TODO: enter your 👇 database name below 
-const DB_NAME = "Sandeep";
-const URI = "mongodb://127.0.0.1:27017/" + DB_NAME;
+const DB_USERNAME = "sandeep";
+const DB_PASSWORD = "WPYUgmyKeJ6L0Bji";
+const DB_NAME = "spotify-playlist";
+const URI = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.mcfdnaj.mongodb.net/${DB_NAME}`;
 mongoose.connect(URI);
 mongoose.connection.on("connected", () => {
     console.log("mongodb is connected successfully");
