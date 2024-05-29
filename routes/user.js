@@ -178,9 +178,7 @@ userRouter.delete('/', async (req, res) => {
     }
 });
 
-userRouter.get('/',(req,res)=>{
-    res.send("Get : User")
-})
+
 
 // 🔖 in user-route.js always export userRouter alone.
 module.exports = userRouter;
